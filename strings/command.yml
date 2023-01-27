@@ -14,16 +14,16 @@
 PING_COMMAND : ["ping"]
 START_COMMAND : ["start"]
 HELP_COMMAND : ["help"]
-SETTINGS_COMMAND : ["settings", "setting"]
-RELOAD_COMMAND : ["admincache", "reload"]
+SETTINGS_COMMAND : ["settings", "setting", "الاعدادات", "اعدادات"]
+RELOAD_COMMAND : ["admincache", "reload", "ريلود"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["/play", "playforce", "vplayforce", "cplayforce", "cvplayforce", "تشغيل", "فيديو", "#تشغيل", "#فيديو"]
 PLAYMODE_COMMAND : ["playmode"]
-CHANNELPLAY_COMMAND : ["channelplay"]
+CHANNELPLAY_COMMAND : ["channelplay", "قناه"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
@@ -33,7 +33,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["song", "video"]
+SONG_COMMAND : ["song", "video", "تحميل", "تنزيل"]
 LYRICS_COMMAND : ["lyrics"]
 
 
@@ -41,14 +41,14 @@ LYRICS_COMMAND : ["lyrics"]
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
+PAUSE_COMMAND : ["pause", "قف", "استني", "#قف", "#استني"]
+RESUME_COMMAND : ["resume", "استئناف", "كمل", "#استئناف", "#كمل"]
+MUTE_COMMAND : ["mute", "كتم", "اخرس", "#اخرس", "#كتم"]
+UNMUTE_COMMAND : ["unmute", "الغاء كتم", "اتكلم", "#اتكلم", "#الغاء كتم"]
+STOP_COMMAND : ["/stop", "end", "ايقاف", "انهاء", "#ايقاف", "#انهاء", "اسكت", "#اسكت"]
+SKIP_COMMAND : ["/skip", "تخطي", "#تخطي"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
+LOOP_COMMAND : ["loop", "اعاده", "#اعاده"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["restart"]
 
