@@ -27,6 +27,11 @@ MUTE_COMMAND = get_command("MUTE_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(filters.command(["ميوت"],"")
+& filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @AdminRightsCheck
 async def mute_admin(cli, message: Message, _, chat_id):
     if not len(message.command) == 1 or message.reply_to_message:

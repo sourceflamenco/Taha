@@ -22,8 +22,13 @@ PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 
 
 @app.on_message(
-    filters.command(["قفي","قف","استني"],"")
+    filters.command(PAUSE_COMMAND)
     & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
+@app.on_message(filters.command(["وقف","اقف","استنا"],"")
+& filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )

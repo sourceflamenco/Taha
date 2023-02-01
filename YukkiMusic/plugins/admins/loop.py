@@ -27,6 +27,11 @@ LOOP_COMMAND = get_command("LOOP_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(filters.command(["تكرار"],"")
+& filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @AdminRightsCheck
 async def admins(cli, message: Message, _, chat_id):
     usage = _["admin_24"]
