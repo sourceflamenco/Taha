@@ -55,7 +55,6 @@ y.verbose = False
 
     
 @app.on_message(
-    command(["قول"])
     & filters.group
     & ~filters.edited
 )
