@@ -54,9 +54,6 @@ y = lg.Genius(
 y.verbose = False
 
     
-@app.on_message(
-    & filters.group
-    & ~filters.edited
 )
 def echo(client, msg):
     text = msg.text.split(None, 1)[1]
