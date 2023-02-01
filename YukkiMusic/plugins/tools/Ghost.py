@@ -73,27 +73,7 @@ async def khalid(client: Client, message: Message):
             ]
         ),
     )
-                    
-@app.on_message(
-     command(["مبرمج السورس","المطور","مطور السورس","المبرمج"])
-    & filters.group
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/785baf430cea447a9edf1.jpg",
-        caption=f"""𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝔾ℍ𝕆𝕊𝕋 𝕊𝕆𝕌ℝℂ𝔼""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton("𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/MIDO_Jr"),
-                ],[
-                InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/Just_Ghosst"),
-                ]
-            ]
-        ),
-    )
+                  
 
 @app.on_message(
     command(["سورس","السورس"])
