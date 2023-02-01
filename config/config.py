@@ -58,18 +58,30 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/TeamYukki/YukkiMusicBot",
 )
+BOT_USERNAME = getenv(
+    "BOT_USERNAME", "EFRUH_BOT"
+)  # معرف بوتك بدون @
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
+CHANNEL_SUDO = getenv(
+    "CHANNEL_SUDO", "FH_KP"
+)  # معرف قناتك بدون @
+YAFA_NAME = getenv(
+    "YAFA_NAME", "ڪؔلۢ͢مۨــــٓــُۧا٘ت͂ ضاَئٰعُٰــــٓــﮥ"
+)  # اسم قناتك
+YAFA_CHANNEL = getenv(
+   " YAFA_CHANNEL", "https://t.me/FH_KP"
+)  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
-)  # Example:- https://t.me/TheYukki
+    "SUPPORT_CHANNEL", "https://t.me/FH_KP"
+)  # رابط قناتك
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", None
-)  # Example:- https://t.me/YukkiSupport
+    "SUPPORT_GROUP", "https://t.me/FH_KP"
+)  # رابط كروبك
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
