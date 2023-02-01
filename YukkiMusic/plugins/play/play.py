@@ -87,7 +87,7 @@ force_btn = InlineKeyboardMarkup(
 
             InlineKeyboardButton(
 
-                text="قناة البوت", url=f"{CHANNEL_SUDO}"
+                text="قناة البوت", url=f"{YAFA_CHANNEL}"
 
             ),                        
 
