@@ -59,7 +59,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/TeamYukki/YukkiMusicBot",
 )
 BOT_USERNAME = getenv(
-    "BOT_USERNAME", "EFRUH_BOT"
+    "BOT_USERNAME", "FH_KPPBOT"
 )  # معرف بوتك بدون @
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -68,19 +68,19 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "FH_KP"
+    "CHANNEL_SUDO", "FHT7P"
 )  # معرف قناتك بدون @
 YAFA_NAME = getenv(
     "YAFA_NAME", "ڪؔلۢ͢مۨــــٓــُۧا٘ت͂ ضاَئٰعُٰــــٓــﮥ"
 )  # اسم قناتك
 YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/FH_KP"
+   " YAFA_CHANNEL", "https://t.me/FHT7P"
 )  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/FH_KP"
+    "SUPPORT_CHANNEL", "https://t.me/FHT7P"
 )  # رابط قناتك
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/FH_KP"
+    "SUPPORT_GROUP", "https://t.me/gjhiggcc"
 )  # رابط كروبك
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
