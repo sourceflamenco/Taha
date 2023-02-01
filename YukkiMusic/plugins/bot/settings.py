@@ -44,10 +44,17 @@ from YukkiMusic.utils.inline.start import private_panel
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
 
+Dev = 1121532100
+botid = "@J_AA_BOT"
 
 @app.on_message(
     filters.command(SETTINGS_COMMAND)
     & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
+@app.on_message(filters.command(["الاعدادات"],"")
+& filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )
@@ -86,25 +93,31 @@ async def settings_cb(client, CallbackQuery, _):
 async def settings_back_markup(
     client, CallbackQuery: CallbackQuery, _
 ):
-    try:
-        await CallbackQuery.answer()
-    except:
-        pass
-    if CallbackQuery.message.chat.type == "private":
-        try:
-            await app.resolve_peer(OWNER_ID[0])
-            OWNER = OWNER_ID[0]
-        except:
-            OWNER = None
-        buttons = private_panel(_, app.username, OWNER)
-        return await CallbackQuery.edit_message_text(
-            _["start_2"].format(MUSIC_BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
-        )
-    else:
-        buttons = setting_markup(_)
-        return await CallbackQuery.edit_message_reply_markup(
-            reply_markup=InlineKeyboardMarkup(buttons)
+           usr = await client.get_chat(Dev)
+           name = usr.first_name
+           id = usr.id
+           usrt = await client.get_chat(botid)
+           idbott = usrt.id
+           namet = usrt.first_name
+           await CallbackQuery.edit_message_text(
+            _["start_2"].format(namet),reply_markup=InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton(
+                text=_["S_B_8"], callback_data="ayamr"
+            ), 
+        InlineKeyboardButton(text="حول 🧸🩹", callback_data="devstart"), 
+        ],[
+                InlineKeyboardButton(name, user_id=id
+                )
+            ],[
+        InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG")
+        ],[
+            InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/{app.username}?startgroup=true"
+            )
+            ]
+    ]),
         )
 
 

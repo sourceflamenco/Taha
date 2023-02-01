@@ -34,7 +34,8 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 loop = asyncio.get_running_loop()
 
-
+Dev = 1121532100
+botid = "@J_AA_BOT"
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
@@ -187,25 +188,32 @@ async def start_comm(client, message: Message, _):
                     f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
                 )
     else:
-        try:
-            await app.resolve_peer(OWNER_ID[0])
-            OWNER = OWNER_ID[0]
-        except:
-            OWNER = None
-        out = private_panel(_, app.username, OWNER)
-        if config.START_IMG_URL:
-            try:
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(
-                        config.MUSIC_BOT_NAME
-                    ),
-                    reply_markup=InlineKeyboardMarkup(out),
+        if message.from_user.id:
+               usr = await client.get_chat(Dev)
+               name = usr.first_name
+               id = usr.id
+               usrt = await client.get_chat(botid)
+               idbott = usrt.id
+               namet = usrt.first_name
+               async for photo in client.iter_profile_photos(idbott, limit=1):
+                     await message.reply_photo(photo.file_id,caption=_["start_2"].format(namet),reply_markup=InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton(
+                text=_["S_B_8"], callback_data="ayamr"
+            ), 
+        InlineKeyboardButton(text="حول 🧸🩹", callback_data="devstart"), 
+        ],[
+                InlineKeyboardButton(name, user_id=id
                 )
-            except:
-                await message.reply_text(
-                    _["start_2"].format(config.MUSIC_BOT_NAME),
-                    reply_markup=InlineKeyboardMarkup(out),
+            ],[
+        InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG")
+        ],[
+            InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/{app.username}?startgroup=true"
+            )
+            ]
+    ]),
                 )
         else:
             await message.reply_text(
