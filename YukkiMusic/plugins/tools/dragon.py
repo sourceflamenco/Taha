@@ -54,7 +54,6 @@ y = lg.Genius(
 y.verbose = False
 
     
-)
 def echo(client, msg):
     text = msg.text.split(None, 1)[1]
     msg.reply(text)
