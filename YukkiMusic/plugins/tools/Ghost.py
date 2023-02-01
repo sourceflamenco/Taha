@@ -1,7 +1,6 @@
 from YukkiMusic.utils.database import is_music_playing, music_off
 from strings import get_command
 import asyncio
-from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import set_loop
