@@ -73,37 +73,6 @@ async def khalid(client: Client, message: Message):
             ]
         ),
     )
-
-    
-@app.on_message(
-    command(["قول"])
-    & filters.group
-    & ~filters.edited
-)
-def echo(client, msg):
-    text = msg.text.split(None, 1)[1]
-    msg.reply(text)
-
-@app.on_message(
-    command(["انا مين"])
-    & filters.group
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message):
-    usr = await client.get_users(message.from_user.id)
-    name = usr.first_name
-    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
-                    await message.reply_text( 
-                    f"""💜انت قلبي💜""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/MIDO_Jr"),
-                ],
-            ]
-        ),
-    )
                     
 @app.on_message(
      command(["مبرمج السورس","المطور","مطور السورس","المبرمج"])
