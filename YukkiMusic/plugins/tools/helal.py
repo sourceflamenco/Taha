@@ -50,4 +50,20 @@ async def khalid(client: Client, message: Message):
  
 •═════•م [⌞ 𝙻𝙾𝚂𝚃 𝚆𝙾𝚁𝙳𝚂 ⌝](https://t.me/FH_KP) •═════•
 1 ← اوامـر الميـوزك .""",
-        
+      reply_markup=InlineKeyboardMarkup(
+
+            [
+
+                [
+
+                    InlineKeyboardButton(
+
+                        "« قنـاة البـوت »", url=f"https://t.me/FHT7P"),
+
+                ],
+
+            ]
+
+        ),
+
+    )  
