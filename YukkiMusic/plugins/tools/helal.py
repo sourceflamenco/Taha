@@ -19,16 +19,16 @@ async def khalid(client: Client, message: Message):
         photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
         caption=f"""✅ مرحبا بك عزيزي {message.from_user.mention}""",
         reply_markup=InlineKeyboardMarkup(
-        [
             [
+                [
+                InlineKeyboardButton("القيـ⁽𝄠ـصؔر™²‏͢⍣⃟⍣⃟🇾🇪̸ُٖ͢²َُ₂₀₂₂", url=f"https://t.me/qaysar_9"),
+                ],[
                 InlineKeyboardButton(
-                        "𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/MIDO_Jr"),
-            ],[
-                InlineKeyboardButton("✚ أضفني الى مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        "« قنـاة البـوت »", url=f"https://t.me/FHT7P"),
+                ]
             ]
-        ]
-         ),
-     )
+        ),
+    )
 @app.on_message(
     filters.command(["سورس","السورس"],""))
 async def khalid(client: Client, message: Message):
