@@ -21,9 +21,9 @@ async def khalid(client: Client, message: Message):
                     await message.reply_photo(photo.file_id,       caption=f"""أسمك {message.from_user.mention}\n\nيـوزك @{message.from_user.username}\n\nآيديك {message.from_user.id}\n\nايدي الدردشه {message.chat.id}""", 
         reply_markup=InlineKeyboardMarkup(
             [
-                [
+                [  
                     InlineKeyboardButton(
-                        "َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
+                        name, url=f"https://t.me/{message.from_user.username}")
                 ],
             ]
         ),
