@@ -62,7 +62,7 @@ async def khalid(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/MIDO_Jr"),
-                ],
+                ]
             ]
         ),
     )
