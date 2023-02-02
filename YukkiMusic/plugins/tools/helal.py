@@ -19,35 +19,31 @@ async def khalid(client: Client, message: Message):
         photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
         caption=f"""✅ مرحبا بك عزيزي {message.from_user.mention}""",
         reply_markup=InlineKeyboardMarkup(
+        [
             [
-                [
-                InlineKeyboardButton("𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/MIDO_Jr"),
-                ],[
                 InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/Just_Ghosst"),
-                ],[
+                        "𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/MIDO_Jr"),
+            ],[
                 InlineKeyboardButton("✚ أضفني الى مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
         ]
          ),
      )
-@app.on_message(
-    filters.command(["مطور","المطور"],""))
+  @app.on_message(
+    filters.command(["المطور","مطور"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
         caption=f"""✅ مرحبا بك عزيزي {message.from_user.mention}""",
         reply_markup=InlineKeyboardMarkup(
+        [
             [
-                [
-                InlineKeyboardButton("𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/MIDO_Jr"),
-                ],[
                 InlineKeyboardButton(
-                        "𝑺𝒐𝒖𝒓𝒄𝒆", url=f"https://t.me/Just_Ghosst"),
-                ],[
+                        "𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓", url=f"https://t.me/MIDO_Jr"),
+            ],[
                 InlineKeyboardButton("✚ أضفني الى مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
         ]
          ),
-     )     
-
+     )
+  
