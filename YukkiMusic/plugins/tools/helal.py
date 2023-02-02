@@ -65,38 +65,4 @@ async def khalid(client: Client, message: Message):
                 ],
             ]
         ),
-@app.on_message(
-    filters.command(["تحبني"],""))
-async def khalid(client: Client, message: Message):        
-musr = await client.get_users(message.from_user.id)
-    name = usr.first_name
-    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
-                    await message.reply_text( 
-                    f"""اكيد بحبك""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "« قنـاة البـوت »", url=f"https://t.me/FHT7P"),
-                ],
-            ]
-        ),
-    )
-@app.on_message(
-    filters.command(["بوت"],""))
-async def khalid(client: Client, message: Message):        
-musr = await client.get_users(message.from_user.id)
-    name = usr.first_name
-    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
-                    await message.reply_text( 
-                    f"""لاتصيح لي بوت عندي اسم ترا""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "« قنـاة البـوت »", url=f"https://t.me/FHT7P"),
-                ],
-            ]
-        ),
-    )
-        
+                                              
