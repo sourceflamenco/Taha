@@ -37,7 +37,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","gohara")
 
 # ايديهات المطورين الملاك
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1121532100").split())
+    map(int, getenv("OWNER_ID", "5752175961").split())
 ) 
 
 # سيبو زي مهوه ملهوش لزمه
@@ -100,7 +100,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # هيدي في رساله استارت لصنع بوت 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/FHT7P")
+GITHUB_REPO = getenv("GITHUB_REPO", None)
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
@@ -158,7 +158,7 @@ autoclean = []
 
 
 # صوره الاستارت
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/1515d357035a1ca8b72d6.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/47ef3efbed158f101cbef.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
@@ -167,7 +167,7 @@ PING_IMG_URL = getenv(
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "https://telegra.ph/file/0a544f8e1d08b9e737c1d.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -177,7 +177,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+    "https://telegra.ph/file/e9c9d405688154b60bb15.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
