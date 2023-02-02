@@ -30,7 +30,7 @@ async def khalid(client: Client, message: Message):
         ),
     )
 @app.on_message(
-    filters.command(["سورس","السورس"],""))
+    filters.command(["الاوامر","اوامر"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
