@@ -98,7 +98,7 @@ async def khalid(client: Client, message: Message):
     filters.command(["لندا"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
+        photo=f"https://telegra.ph/file/600d400a176f8562f5ff4.jpg",
         caption=f"""عيـون لنـدا""",
         reply_markup=InlineKeyboardMarkup(
             [
