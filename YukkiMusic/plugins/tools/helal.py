@@ -111,7 +111,8 @@ async def khalid(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["الرابط","/link"]) & ~filters.bot & ~filters.private)
+@app.on_message(
+    filters.command(["الرابط"],""))
 async def invitelink(client, message):
     chid = message.chat.id
     try:
