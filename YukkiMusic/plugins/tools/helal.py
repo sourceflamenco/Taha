@@ -22,7 +22,7 @@ async def khalid(client: Client, message: Message):
          ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ⌯︙*[𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ‌](https://t.me/FH_KP)*
 
-⌯︙*[َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼](https://t.me/FH_KP)*
+⌯︙*[َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼](َِhttps://t.me/FH_KP)*
 
 ⌯︙*[𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ‌](https://t.me/CR_7_L)*
 
@@ -42,7 +42,7 @@ async def khalid(client: Client, message: Message):
     filters.command(["الاوامر","/start"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/091e1fa2091159401cc43.jpg",
+        photo=f"https://telegra.ph/file/acc59bd6e3af1579bd40b.jpg",
         caption=f"""𝑤𝑒𝑙𝑐𝑜𝑚𝑒 {message.from_user.mention}
         
 « اليك قائـمة الاوامــر »
@@ -78,18 +78,18 @@ async def khalid(client: Client, message: Message):
 
     )  
 @app.on_message(
-    filters.command(["بوت"],""))
+    filters.command(["بوت الحذف"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/c248bb317d69cc58acd0b.jpg",
-        caption=f"""لبيــه 🥺..ᯓ૪❤️""",
+        photo=f"https://telegra.ph/file/7bc5810a111c94694e66a.jpg",
+        caption=f"""فڪـر قبـل لا تحذف 🥺..""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
+                InlineKeyboardButton("بـوت الحـذف", url=f"https://t.me/DTeLebot"),
                 ],[
                 InlineKeyboardButton(
-                        "ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼 َِ𝙈َِ𝙐َِ𝙎َِ𝙄َِ𝘾", url=f"https://t.me/LANDHLBOT?startgroup=true"),
+                        "𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
                 ]
             ]
         ),
@@ -98,7 +98,7 @@ async def khalid(client: Client, message: Message):
     filters.command(["لندا"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/e5c60caf8436728f167a5.jpg",
+        photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
         caption=f"""عيـون لنـدا""",
         reply_markup=InlineKeyboardMarkup(
             [
