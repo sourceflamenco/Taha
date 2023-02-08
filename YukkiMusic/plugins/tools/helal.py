@@ -11,113 +11,90 @@ from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMar
 from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 #########
-#الاوامر    
+#الاوامر
 @app.on_message(
-    filters.command(["سورس","السورس"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/1975238af57c2c8621348.jpg",
-        caption=f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʟɪɴᴅᴀ
-        
-         ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌯︙*[𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ‌](https://t.me/FH_KP)*
-
-⌯︙*[َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼](https://t.me/FH_KP)*
-
-⌯︙*[𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ‌](https://t.me/CR_7_L)*
-
-         ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ],[
-                InlineKeyboardButton(
-                        "« أضغـط لاضـافتـي لمجموعتك »", url=f"https://t.me/LANDHLBOT?startgroup=true"),
-                ]
-            ]
-        ),
-    )
-@app.on_message(
-    filters.command(["الاوامر","/start"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/acc59bd6e3af1579bd40b.jpg",
-        caption=f"""𝑤𝑒𝑙𝑐𝑜𝑚𝑒 {message.from_user.mention}
-        
-« اليك قائـمة الاوامــر »
-
-          [⌞ 𝙻𝙾𝚂𝚃 𝚆𝙾𝚁𝙳𝚂 ⌝](https://t.me/FH_KP) 
-
-- لتشغيل اغنيه اكتب : تشغيل او شغل او /play
-- لأنهاء الاغنيه اكتب : ايقاف او انهاء او /stop
-- لايقاف الاغنيه مؤقت اكتب : قف او /pause
-- لتكملة الاغنيه من الايقاف المؤقت اكتب : كمل او /resume
-- لتخطي الاغنيه اكتب : تخطي او /skip
-- لكتم البوت في المحادثه اكتب : ڪتم او /mute
-- لألغاء كتم البوت في المحادثه اكتب : اتكلم او /unmute
-- لاعادة تشغيل البوت اكتب : /restart""
-
-          [⌞ 𝙻𝙾𝚂𝚃 𝚆𝙾𝚁𝙳𝚂 ⌝](https://t.me/FH_KP) 
-1 ← اوامـر التشغيـل.""",
-      reply_markup=InlineKeyboardMarkup(
-
-            [
-
-                [
-
-                    InlineKeyboardButton(
-
-                        "« َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼 »", url=f"https://t.me/FH_KP"),
-
-                ],
-
-            ]
-
-        ),
-
-    )  
-@app.on_message(
-    filters.command(["بوت الحذف"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/7bc5810a111c94694e66a.jpg",
-        caption=f"""فڪـر قبـل لا تحذف 🥺..""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton("بـوت الحـذف", url=f"https://t.me/DTeLebot"),
-                ],[
-                InlineKeyboardButton(
-                        "𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ]
-            ]
-        ),
-    )
-@app.on_message(
-    filters.command(["لندا"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/600d400a176f8562f5ff4.jpg",
-        caption=f"""عيـون لنـدا""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ],[
-                InlineKeyboardButton(
-                        "ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼 َِ𝙈َِ𝙐َِ𝙎َِ𝙄َِ𝘾", url=f"https://t.me/LANDHLBOT?startgroup=true"),
-                ]
-            ]
-        ),
-    )
-@app.on_message(
-    filters.command(["الرابط"],""))
-async def invitelink(client, message):
-    chid = message.chat.id
+    filters.command(["منشن","تك عام","@all"],""))
+async def tag_all(client, message):
+    global stopProcess
     try:
-        invitelink = await client.export_chat_invite_link(chid)
-    except:
-        return await message.reply_text("قم برفعي مسؤول في المجموعة أولا ؟")
-    await message.reply_text(f"**تم إنشاء رابط الدعوة بنجاح :**\n {invitelink}")
-    
+        has_permissions = True
+        if has_permissions:
+            if len(chatQueue) > 5:
+                await message.reply(
+                    "⛔️ | I'm already working on my maximum number of 5 chats at the moment. Please try again shortly.")
+            else:
+                if message.chat.id in chatQueue:
+                    await message.reply(
+                        "🚫 | There's already an ongoing process in this chat. Please /stop to start a new one.")
+                else:
+                    chatQueue.append(message.chat.id)
+                    if len(message.command) > 1:
+                        inputText = message.command[1]
+                    elif len(message.command) == 1:
+                        inputText = ""
+                    membersList = []
+                    async for _, v in a.enumerate(await client.get_chat_members(message.chat.id)):
+                        if v.user.is_bot == True:
+                            pass
+                        elif v.user.is_deleted == True:
+                            pass
+                        else:
+                            membersList.append(v.user)
+                    i = 0
+                    lenMembersList = len(membersList)
+                    if stopProcess: stopProcess = False
+                    while len(membersList) > 0 and not stopProcess:
+                        j = 0
+                        text1 = f"{inputText}\n\n"
+                        try:
+                            while j < 10:
+                                user = membersList.pop(0)
+                                if user.username == None:
+                                    text1 += f"{user.mention} "
+                                    j += 1
+                                else:
+                                    text1 += f"@{user.username} "
+                                    j += 1
+                            try:
+                                await app.send_message(message.chat.id, text1)
+                            except Exception:
+                                pass
+                            await asyncio.sleep(10)
+                            i += 10
+                        except IndexError:
+                            try:
+                                await app.send_message(message.chat.id, text1)
+                            except Exception:
+                                pass
+                            i = i + j
+                    if i == lenMembersList:
+                        await message.reply(f"✅ | تم عمل التاك **عدد الاعضاء {i} **.")
+                    else:
+                        await message.reply(
+                            f"✅ | Successfully mentioned **{i} members.**\n❌ | Bots and deleted accounts were rejected.")
+                    chatQueue.remove(message.chat.id)
+        else:
+            await message.reply("👮🏻 | Sorry, **only admins** can execute this command.")
+    except FloodWait as e:
+        await asyncio.sleep(e.value)
+
+
+@app.on_message(command(TAG_COMMAND_STOP)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS)
+async def tag_all_stop(client, message):
+    global stopProcess
+    try:
+        has_permissions = True
+        if has_permissions:
+            if not message.chat.id in chatQueue:
+                await message.reply("🤷🏻‍♀️ | There is no ongoing process to stop.")
+            else:
+                stopProcess = True
+                await message.reply("🛑 | تم الايقاف بنجاح.")
+        else:
+            await message.reply("👮🏻 | Sorry, **only admins** can execute this command.")
+    except FloodWait as e:
+        await asyncio.sleep(e.value)
+
