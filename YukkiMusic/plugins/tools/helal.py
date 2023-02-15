@@ -95,39 +95,44 @@ async def khalid(client: Client, message: Message):
         ),
     )
 @app.on_message(
-    filters.command(["لندا"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/7e51929d9635e47097113.jpg",
-        caption=f"""عيـون لنـدا""",
+    filters.command(["بوت"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""اي يقلبـي 🤍😻""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ],[
-                InlineKeyboardButton(
-                        "ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼 َِ𝙈َِ𝙐َِ𝙎َِ𝙄َِ𝘾", url=f"https://t.me/LANDHLBOT?startgroup=true"),
+            [
+                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
-    )
+    ) 
 @app.on_message(
-    filters.command(["انامين"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/4b590e917de43dcbf3b37.jpg",
-        caption=f"""ـ• ﺂٰنـُـٰٰت ﺂٰلـُُـٰ؏ـٖمـࢪَٰٰي َ،🤭♥️ ֆ ۦٰ،""",
+    filters.command(["مين انا"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""انت قلبي ❤😻""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ],[
-                InlineKeyboardButton(
-                        "ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼 َِ𝙈َِ𝙐َِ𝙎َِ𝙄َِ𝘾", url=f"https://t.me/LANDHLBOT?startgroup=true"),
+            [
+                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
-    )
+    )       
+@app.on_message(
+    filters.command(["انا مين"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""ـ• ﺂٰنـُـٰٰت ﺂٰلـُُـٰ؏ـٖمـࢪَٰٰي َ،🤭♥️ ֆ ۦٰ،""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+            [
+                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
+                ]
+            ]
+        ),
+    )    
 @app.on_message(
     filters.command(["مطور","المطور"],""))
 async def khalid(client: Client, message: Message):
@@ -135,14 +140,15 @@ async def khalid(client: Client, message: Message):
         photo=f"https://telegra.ph/file/694b785f09dca102bb320.jpg",
         caption=f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʟɪɴᴅᴀ
         
-         ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌯︙*[𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ‌](https://t.me/FH_KP)*
-
-⌯︙*[𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍¹ ](https://t.me/FH_KN)*
-
-⌯︙*[𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍² ‌](https://t.me/CR_7_L)*
-
-         ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉""",
+╔════ ⋆★⋆ ═════
+║
+╠⌯︙» [𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ‌](https://t.me/FH_KP)
+║
+╠⌯︙» [𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍¹ ](https://t.me/FH_KN)
+║
+╠⌯︙» [𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍² ‌](https://t.me/CR_7_L)
+║
+╚════ ⋆★⋆ ═════""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -153,7 +159,44 @@ async def khalid(client: Client, message: Message):
                 ]
             ]
         ),
-    )    
+    )  
+@app.on_message(
+    filters.command(["لندا"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""اي يقلبي 🤍😻""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+            [
+                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
+                ]
+            ]
+        ),
+    )
+@app.on_message(
+    filters.command(["ميديا", "/tm", "tgm"],""))
+async def telegraph(client, message):
+    replied = message.reply_to_message
+    if not replied:
+        return await message.reply("الرد على ملف وسائط مدعوم ")
+    if not (
+        (replied.photo and replied.photo.file_size <= 5242880)
+        or (replied.animation and replied.animation.file_size <= 5242880)
+        or (replied.video and replied.video.file_name.endswith(".mp4") and replied.video.file_size <= 5242880)
+        or (replied.document and replied.document.file_name.endswith((".jpg", ".jpeg", ".png", ".gif", ".mp4")) and replied.document.file_size <= 5242880)):
+        return await message.reply("غير مدعوم !")
+    download_location = await client.download_media(message=message.reply_to_message,file_name="root/downloads/")
+    try:
+        response = upload_file(download_location)
+    except Exception as document:
+        await message.reply(message, text=document)
+    else:
+        button_s = InlineKeyboardMarkup([[InlineKeyboardButton("فتح الرابط 🔗", url=f"https://telegra.ph{response[0]}")]])
+        await message.reply(f"**الرابط »**\n`https://telegra.ph{response[0]}`",disable_web_page_preview=True,reply_markup=button_s)
+    finally:
+        os.remove(download_location)          
+
+
 @app.on_message(
     filters.command(["الرابط"],""))
 async def invitelink(client, message):
