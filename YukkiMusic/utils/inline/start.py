@@ -1,32 +1,26 @@
-import asyncio
-import re
-import os
-import random
-import requests
-from pyrogram import Client, filters
-from pyrogram.types import (
-    CallbackQuery,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ReplyKeyboardMarkup,
-    ReplyKeyboardRemove,
-    InputMediaPhoto,
-    Message,
-)
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
 from typing import Union
+
+from pyrogram.types import InlineKeyboardButton
+
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
-from strings.filters import command
+
 
 def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
                 text=_["S_B_1"],
-                url=f"",
-            ),
-            InlineKeyboardButton(
-                text=_["S_B_S"], callback_data="amm"
+                url=f"https://t.me/{app.username}?start=help",
             ),
             InlineKeyboardButton(
                 text=_["S_B_2"], callback_data="settings_helper"
@@ -41,11 +35,6 @@ def start_pannel(_):
                 ),
                 InlineKeyboardButton(
                     text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                ),
-                InlineKeyboardButton(
-
-                    text=_["S_B_9"], url=f"https://t.me/so_alfaa"
-
                 ),
             ]
         )
@@ -135,25 +124,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_11"], url=f"https://t.me/NvvvC"
-                    ),
-                    InlineKeyboardButton(
-
-                        text=_["S_B_12"], url=f"https://t.me/NvvvM"
-
-                    ),
-                ]
-            )
-        if OWNER:
-            buttons.append(
-                [
-                    InlineKeyboardButton(
                         text=_["S_B_7"], user_id=OWNER
-                    ),
-                    InlineKeyboardButton(
-
-                        text=_["S_B_10"], url=f"https://t.me/so_alfaa"
-
                     ),
                 ]
             )
@@ -164,10 +135,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
 
 
 
-
-
-  
-  
 REPLY_MESSAGE = "- اهلين ياعيني عندك الازرار تحت استمتع"
 
 REPLY_MESSAGE_BUTTONS = [
