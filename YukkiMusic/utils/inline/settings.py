@@ -39,7 +39,6 @@ def setting_markup(_):
 
 
 def audio_quality_markup(
-    _,
     low: Union[bool, str] = None,
     medium: Union[bool, str] = None,
     high: Union[bool, str] = None,
