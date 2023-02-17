@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
 from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
@@ -149,7 +158,15 @@ def cleanmode_settings_markup(
             InlineKeyboardButton(
                 text=_["ST_B_14"] if dels == True else _["ST_B_15"],
                 callback_data="COMMANDELMODE",
-          
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["ST_B_27"], callback_data="SUGGANSWER"
+            ),
+            InlineKeyboardButton(
+                text=_["ST_B_14"] if sug == True else _["ST_B_15"],
+                callback_data="SUGGESTIONCHANGE",
             ),
         ],
         [
