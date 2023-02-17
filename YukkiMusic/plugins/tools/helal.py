@@ -14,68 +14,46 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 #الاوامر    
 @app.on_message(
     filters.command(["سورس","السورس"],""))
-async def khalid(client: Client, message: Message):
+async def sourc(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/1975238af57c2c8621348.jpg",
-        caption=f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʟɪɴᴅᴀ
-        
-         ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌯︙*[𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ‌](https://t.me/FH_KP)*
-
-⌯︙*[َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼](َِhttps://t.me/FH_KP)*
-
-⌯︙*[𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ‌](https://t.me/CR_7_L)*
-
-         ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉""",
+        photo=f"https://telegra.ph/file/10dfb95793ff3d40e0a90.jpg",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²](t.me/AA969622) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ],[
-                InlineKeyboardButton(
-                        "« أضغـط لاضـافتـي لمجموعتك »", url=f"https://t.me/LANDHLBOT?startgroup=true"),
+            [
+                InlineKeyboardButton("تحديثات لندا", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
-    )
+    )     
 @app.on_message(
-    filters.command(["الاوامر","/start"],""))
+    filters.command(["اوامرلندا","الاوامر"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/acc59bd6e3af1579bd40b.jpg",
+        photo=f"https://telegra.ph/file/15ab2ecef4cc16d95be30.jpg",
         caption=f"""𝑤𝑒𝑙𝑐𝑜𝑚𝑒 {message.from_user.mention}
         
 « اليك قائـمة الاوامــر »
+          
 
-          [⌞ 𝙻𝙾𝚂𝚃 𝚆𝙾𝚁𝙳𝚂 ⌝](https://t.me/FH_KP) 
+» لتشغيل اغنيه اكتب : تشغيل او شغل
+» لأنهاء الاغنيه اكتب : ايقاف او انهاء 
+» لايقاف الاغنيه مؤقت اكتب : قف 
+» لتكملة الاغنيه من الايقاف المؤقت اكتب : كمل او استمر
+» لتخطي الاغنيه اكتب : تخطي او التالي
+» لكتم البوت في المحادثه اكتب : ڪتم او اسكتي
+» لألغاء كتم البوت في المحادثه اكتب : اتكلم او تكلمي
+» لتحميـل الاغانـي اڪتب : بحث او تحميل
+» لاعادة تشغيل البوت اكتب : /restart""
 
-- لتشغيل اغنيه اكتب : تشغيل او شغل او /play
-- لأنهاء الاغنيه اكتب : ايقاف او انهاء او /stop
-- لايقاف الاغنيه مؤقت اكتب : قف او /pause
-- لتكملة الاغنيه من الايقاف المؤقت اكتب : كمل او /resume
-- لتخطي الاغنيه اكتب : تخطي او /skip
-- لكتم البوت في المحادثه اكتب : ڪتم او /mute
-- لألغاء كتم البوت في المحادثه اكتب : اتكلم او /unmute
-- لاعادة تشغيل البوت اكتب : /restart""
-
-          [⌞ 𝙻𝙾𝚂𝚃 𝚆𝙾𝚁𝙳𝚂 ⌝](https://t.me/FH_KP) 
-1 ← اوامـر التشغيـل.""",
+اوامـر التشغيـل.""",
       reply_markup=InlineKeyboardMarkup(
-
             [
-
-                [
-
-                    InlineKeyboardButton(
-
-                        "« َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼 »", url=f"https://t.me/FH_KP"),
-
-                ],
-
+            [
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                ]
             ]
-
         ),
-
     )  
 @app.on_message(
     filters.command(["بوت الحذف"],""))
@@ -89,7 +67,7 @@ async def khalid(client: Client, message: Message):
                 InlineKeyboardButton("بـوت الحـذف", url=f"https://t.me/DTeLebot"),
                 ],[
                 InlineKeyboardButton(
-                        "𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
+                        "تحديثات لنـدا", url=f"https://t.me/FH_KP"),
                 ]
             ]
         ),
@@ -102,7 +80,7 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
@@ -115,7 +93,7 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
@@ -128,7 +106,7 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
@@ -137,29 +115,23 @@ def reply_to_timo(Client, message):
     filters.command(["مطور","المطور"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/694b785f09dca102bb320.jpg",
+        photo=f"https://telegra.ph/file/cda29519fd4604624777b.jpg",
         caption=f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʟɪɴᴅᴀ
         
-╔════ ⋆★⋆ ═════
-║
-╠⌯︙» [𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ‌](https://t.me/FH_KP)
-║
-╠⌯︙» [𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍¹ ](https://t.me/FH_KN)
-║
-╠⌯︙» [𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍² ‌](https://t.me/CR_7_L)
-║
-╚════ ⋆★⋆ ═════""",
+
+•ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](https://t.me/FH_KN)
+
+•ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²‌](https://t.me/AA969622)
+ 
+•ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                InlineKeyboardButton("َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 ِٚ𝙇َِ𝙄َِ𝙉َِ𝘿َِ𝘼", url=f"https://t.me/FH_KP"),
-                ],[
-                InlineKeyboardButton(
-                        "« أضغـط لاضـافتـي لمجموعتك »", url=f"https://t.me/LANDHLBOT?startgroup=true"),
+            [
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
-    )  
+    )       
 @app.on_message(
     filters.command(["لندا"],""))
 def reply_to_timo(Client, message):
@@ -168,7 +140,7 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("وتيٌـِـ¦ـنَ الروحُ ♥️َ♪✗⇣", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
                 ]
             ]
         ),
