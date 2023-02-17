@@ -13,10 +13,8 @@ from pyrogram.types import (
     InputMediaPhoto,
     Message,
 )
-from typing import Union
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
-from strings.filters import command
 
 def start_pannel(_):
     buttons = [
