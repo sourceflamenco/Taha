@@ -6,6 +6,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
+        command
     & filters.group
     & ~filters.edited
 )
