@@ -201,7 +201,8 @@ async def down(client, message):
           m = await message.reply("**- ابشر عيني تم اخفاء الازرار بنجاح\n- لو تبي تطلعها مرة ثانية ارسل**-› /commands", reply_markup= ReplyKeyboardRemove(selective=True))
 ########رسائل الستارت########
 
-@app.on_message(filters.private & command("طريقة تشغيل ميرا"))
+@app.on_message(
+    filters.command("طريقة تشغيل ميرا"))
 async def addbot(client: Client, message: Message):
     await message.reply_text(f"""- **هلا والله ياعيني عشان تفعل بوت ميرا اتبع الخطوات الي بالاسفل**
 
