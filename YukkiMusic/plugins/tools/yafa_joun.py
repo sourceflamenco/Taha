@@ -7,13 +7,13 @@ from YukkiMusic import app
 
 @app.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not YAFA_CHANNEL:  # Not compulsory
+    if not CHANNEL_SUDO:  # Not compulsory
         return
     try:
         try:
             await bot.get_chat_member(CHANNEL_SUDO, msg.from_user.id)
         except UserNotParticipant:
-            if YAFA_CHANNEL.isalpha():
+            if CHANNEL_SUDO.isalpha():
                 link = u"{CHANNEL_SUDO}"
             else:
                 chat_info = await bot.get_chat(CHANNEL_SUDO)
