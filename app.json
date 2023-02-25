@@ -1,13 +1,13 @@
 {
-    "name": "Shizuka Music Bot",
-    "description": "Shizuka Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/798b7275e58d09ac6b095.jpg",
+    "name": "Yukki Music Bot",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Shizuka",
-    "telegram-music-bot",
+    "Yukki",
+    "YukkiMusicBot",
     "telegram-bot",
     "pyrogram"
     ],
@@ -26,7 +26,7 @@
       "AUTO_LEAVING_ASSISTANT": {
         "description": "If you want your assistant to leave all chats automatically after some time.",
         "value": "True",
-        "required": true
+        "required": false
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
@@ -34,34 +34,24 @@
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Ramdi's database for you.",
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
         "value": "",
-        "required": false
+        "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "⁪⁬",
+        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5463205082",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
-      },
-      "PING_IMG_URL": {
-        "description": "The pic which will be shown when you give the /ping cmd to the bot.",
-        "value": "",
-        "required": false
-      },
-      "START_IMG_URL": {
-        "description": "The pic which will be shown when you /start the bot in private.",
-        "value": "",
-        "required": false
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
@@ -74,18 +64,18 @@
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
         "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/WRTRTYYIFOPU/HHF",
+        "value": "https://github.com/TeamYukki/YukkiMusicBot",
         "required": true
       },
       "UPSTREAM_BRANCH": {
         "description": "Upstream Repo's Branch Name",
-        "value": "main",
+        "value": "master",
         "required": true
       }
     },
@@ -101,8 +91,11 @@
           }
       ],
       "formation": {
+
           "worker": {
+
               "quantity": 1,
+
               "size": "Eco"
           }
       },
