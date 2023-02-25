@@ -51,7 +51,6 @@ def git():
     else:
         UPSTREAM_REPO = config.UPSTREAM_REPO
     try:
-        repo = Repo()
         LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
     except GitCommandError:
         LOGGER(__name__).info(f"Invalid Git Command")
