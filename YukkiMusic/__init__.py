@@ -19,7 +19,6 @@ from .logging import LOGGER
 dirr()
 
 # Check Git Updates
-git()
 
 # Initialize Memory DB
 dbb()
