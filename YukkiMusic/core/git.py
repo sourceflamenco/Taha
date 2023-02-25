@@ -63,7 +63,6 @@ def git():
         origin.fetch()
         repo.create_head(
             config.UPSTREAM_BRANCH,
-            origin.refs[config.UPSTREAM_BRANCH],
         )
         repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(
             origin.refs[config.UPSTREAM_BRANCH]
