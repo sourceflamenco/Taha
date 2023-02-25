@@ -92,7 +92,7 @@ async def sop(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "", callback_data="fft"),
                     InlineKeyboardButton(
-                        "", url=f"https://t.me/FH_KP)
+                        "", url=f"https://t.me/FH_KP")
                 ],[
                     InlineKeyboardButton(
                         "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", callback_data="am"),
