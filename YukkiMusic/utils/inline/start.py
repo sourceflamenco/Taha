@@ -282,7 +282,7 @@ REPLY_MESSAGE_BUTTONSS = [
 
   
 @app.on_message(
-    filters.command("اوامر ميرا"))
+    filters.private & command("اوامر ميرا"))
 async def com(_, message: Message):             
         text = REPLY_MESSAGEE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONSS, resize_keyboard=True)
