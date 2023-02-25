@@ -31,7 +31,6 @@ from YukkiMusic.utils.decorators.language import LanguageStart
 from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
-from YukkiMusic import check_client
 
 
 @app.on_callback_query(filters.regex("ddd"))
