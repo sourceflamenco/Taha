@@ -27,7 +27,7 @@ PAUSE_COMMAND = get_command("PAUSE_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
-@app.on_message(filters.command(["وقف","اقف","استنا"],"")
+@app.on_message(filters.command(["وقف","اقف","قفي"],"")
 & filters.group
     & ~filters.edited
     & ~BANNED_USERS
