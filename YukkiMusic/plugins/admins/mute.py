@@ -27,7 +27,7 @@ MUTE_COMMAND = get_command("MUTE_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
-@app.on_message(filters.command(["ميوت"],"")
+@app.on_message(filters.command(["اسكتي"],"")
 & filters.group
     & ~filters.edited
     & ~BANNED_USERS
