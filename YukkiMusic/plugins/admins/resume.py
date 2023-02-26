@@ -27,7 +27,7 @@ RESUME_COMMAND = get_command("RESUME_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
-@app.on_message(filters.command(["كمل","استمر","ارغي"],"")
+@app.on_message(filters.command(["كمل","استمر","كملي"],"")
 & filters.group
     & ~filters.edited
     & ~BANNED_USERS
