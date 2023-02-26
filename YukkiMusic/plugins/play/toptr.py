@@ -75,9 +75,11 @@ def searchMusic(c: Client, m: Message):
 "‏صراحه «» ما هو عمرك الحقيقي ⦁ ",
 "‏صراحه «» ما اكثر شي ندمن عليه ⦁ ",
 "صراحه    ما هي أمنياتك المُستقبلية ⦁ ‏",
-"صراحه «» هل قبلت فتاه ⦁ "]
-    bar = random.choice(selections)
-    await message.reply_text(bar)
+"صراحه «» هل قبلت فتاه ⦁ "
+    ]
+        word = random.choice(txt)
+        m.reply_text(f"- {m.from_user.mention}\n{word}")
+
 
 
 
@@ -135,9 +137,11 @@ def searchMusic(c: Client, m: Message):
 " اسم ولد بحرف «» و  ",
 " نبات بحرف «» ل  ",
 "مدينة بحرف «» ع  ",
-"دولة واسم بحرف «» ب  "]
-    bar = random.choice(selections)
-    await message.reply_text(bar)
+"دولة واسم بحرف «» ب  "
+    ]
+        word = random.choice(txt)
+        m.reply_text(f"- {m.from_user.mention}\n{word}")
+
 
 @app.on_message(filters.regex("^لو خيروك$","لو") & filters.group)
 def searchMusic(c: Client, m: Message):
@@ -239,6 +243,7 @@ def searchMusic(c: Client, m: Message):
 "لو خيروك |  بين امتلاك قطة أو كلب؟ ",
 "لو خيروك |  بين الصداقة والحب ",
 "لو خيروك |  بين تناول الشوكولا التي تحبين طوال حياتك ولكن لا يمكنك الاستماع إلى الموسيقى وبين الاستماع إلى الموسيقى ولكن لا يمكن لك تناول الشوكولا أبدًا؟ ",
-"لو خيروك |  بين مشاركة المنزل مع عائلة من الفئران أو عائلة من الأشخاص المزعجين الفضوليين الذين يتدخلون في كل كبيرة وصغيرة؟ "]
-    bar = random.choice(selections)
-    await message.reply_text(bar)
+"لو خيروك |  بين مشاركة المنزل مع عائلة من الفئران أو عائلة من الأشخاص المزعجين الفضوليين الذين يتدخلون في كل كبيرة وصغيرة؟ "
+    ]
+        word = random.choice(txt)
+        m.reply_text(f"- {m.from_user.mention}\n{word}")
