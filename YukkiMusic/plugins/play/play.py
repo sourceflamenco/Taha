@@ -79,42 +79,6 @@ from YukkiMusic.utils.stream.stream import stream
 
 
 
-force_btn = InlineKeyboardMarkup(
-
-    [
-
-        [
-
-            InlineKeyboardButton(
-
-                text="قناة البوت", url=f"{CHANNEL_SUDO}"
-
-            ),                        
-
-        ],        
-
-    ]
-
-)
-
-
-
-async def check_is_joined(message):    
-
-    try:
-
-        userid = message.from_user.id
-
-        status = await app.get_chat_member(f"{CHANNEL}", userid)
-
-        return True
-
-    except Exception:
-
-        await message.reply_text( "**◇︰ عذرا، عليك لاشتراك في قناة البوت أولاً." ,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
-
-        return False
-
 
 
 # Command
