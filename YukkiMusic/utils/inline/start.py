@@ -66,20 +66,31 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ]
     ]
-    if OWNER:
+    if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text=_["S_B_6"], url=f"https://t.me/bar_lo0o0"
+                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                ),
+                InlineKeyboardButton(
+                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                 ),
             ]
         )
     else:
-        if OWNER:
+        if SUPPORT_CHANNEL:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_6"], url=f"https://t.me/bar_lo0o0"
+                        text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                    )
+                ]
+            )
+        if SUPPORT_GROUP:
+            buttons.append(
+                [
+                    InlineKeyboardButton(
+                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                     )
                 ]
             )
@@ -96,7 +107,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
                 InlineKeyboardButton(
-                    text=_["S_B_4"], url=f"https://t.me/cr_source"
+                    text=_["S_B_6"], url=f"{GITHUB_REPO}"
                 ),
             ]
         )
@@ -105,7 +116,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_4"], url=f"https://t.me/cr_source"
+                        text=_["S_B_6"], url=f"{GITHUB_REPO}"
                     ),
                 ]
             )
@@ -114,11 +125,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 [
                     InlineKeyboardButton(
                         text=_["S_B_7"], user_id=OWNER
-                    ),
-                    InlineKeyboardButton(
-
-                        text=_["S_B_4"], url=f"https://t.me/cr_source"
-
                     ),
                 ]
             )
