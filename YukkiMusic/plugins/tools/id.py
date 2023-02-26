@@ -18,7 +18,7 @@ async def vambir(client: Client, message: Message):
     usr = await client.get_users(message.from_user.id)
     name = usr.first_name
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
-                    await message.reply_text(       f"""◂ 𝙸𝙳 : »  `{message.from_user.id}`\n\n◂ 𝙸𝙳 𝙶𝚁𝙾𝚄𝙿 : » `{message.chat.id}`""",
+                    await message.reply_text(       f"""◂ 𝙸𝙳 : ⇨  `{message.from_user.id}`\n\n◂ 𝙸𝙳 𝙶𝚁𝙾𝚄𝙿 : ⇨ `{message.chat.id}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
