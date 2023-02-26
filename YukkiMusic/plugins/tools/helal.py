@@ -16,7 +16,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     filters.command(["سورس","السورس"],""))
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/fc60eef2c9bb177eb2f1d.mp4",
+        photo=f"https://graph.org/file/304df79ad7f8bac3d8ae7.jpg",
         caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²](t.me/AA969622) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -115,7 +115,7 @@ def reply_to_timo(Client, message):
     filters.command(["مطور","المطور"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/cda29519fd4604624777b.jpg",
+        photo=f"https://graph.org/file/304df79ad7f8bac3d8ae7.jpg",
         caption=f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʟɪɴᴅᴀ
         
 
