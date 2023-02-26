@@ -111,24 +111,34 @@ def reply_to_timo(Client, message):
     )    
 @app.on_message(
     filters.command(["مطور","المطور"],""))
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/cda29519fd4604624777b.jpg",
-        caption=f"""ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ʟɪɴᴅᴀ
-        
+async def aboutd5ev(client: Client, message: Message):
 
-•ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](https://t.me/FH_KN)
+    usr = await client.get_chat(5820455440)
 
-•ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²‌](https://t.me/AA969622)
- 
-•ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
+    name = usr.first_name
+
+    bio = (await client.get_chat(5820455440)).bio
+
+    async for photo in client.iter_profile_photos(5820455440, limit=1):
+
+                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑻𝒐 𝑩𝒐𝒕 𝒍𝒊𝒏𝒌 ♪ -› @FH_KN\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 -› {bio}""", 
+
         reply_markup=InlineKeyboardMarkup(
+
             [
-            [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
-                ]
+
+                [
+
+                    InlineKeyboardButton(
+
+                        name, user_id=5820455440)
+
+                ],
+
             ]
+
         ),
+
     )       
 @app.on_message(
     filters.command(["لندا"],""))
