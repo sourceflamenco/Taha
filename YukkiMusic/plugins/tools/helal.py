@@ -155,26 +155,41 @@ def reply_to_timo(Client, message):
     )
 @app.on_message(
     filters.command(["ميديا", "/tm", "tgm"],""))
-async def telegraph(client, message):
-    replied = message.reply_to_message
-    if not replied:
-        return await message.reply("الرد على ملف وسائط مدعوم ")
-    if not (
-        (replied.photo and replied.photo.file_size <= 5242880)
-        or (replied.animation and replied.animation.file_size <= 5242880)
-        or (replied.video and replied.video.file_name.endswith(".mp4") and replied.video.file_size <= 5242880)
-        or (replied.document and replied.document.file_name.endswith((".jpg", ".jpeg", ".png", ".gif", ".mp4")) and replied.document.file_size <= 5242880)):
-        return await message.reply("غير مدعوم !")
-    download_location = await client.download_media(message=message.reply_to_message,file_name="root/downloads/")
+async def get_link_group(client, message):
+
     try:
-        response = upload_file(download_location)
-    except Exception as document:
-        await message.reply(message, text=document)
-    else:
-        button_s = InlineKeyboardMarkup([[InlineKeyboardButton("فتح الرابط 🔗", url=f"https://telegra.ph{response[0]}")]])
-        await message.reply(f"**الرابط »**\n`https://telegra.ph{response[0]}`",disable_web_page_preview=True,reply_markup=button_s)
-    finally:
-        os.remove(download_location)          
+
+        text = await message.reply("Processing...")
+
+        async def progress(current, total):
+
+            await text.edit_text(f"🕷 يتم رفع الوسائط ... {current * 100 / total:.1f}%")
+
+        try:
+
+            location = f"./media/group/"
+
+            local_path = await message.reply_to_message.download(location, progress=progress)
+
+            await text.edit_text("🕷 يتم جلب الرابط ... 🕸")
+
+            upload_path = upload_file(local_path) 
+
+            await text.edit_text(f"**🕸 | 𝘵𝘦𝘭𝘦 𝘭𝘪𝘯𝘬 **:\n\n<code>https://telegra.ph{upload_path[0]}</code>")     
+
+            os.remove(local_path) 
+
+        except Exception as e:
+
+            await text.edit_text(f"**❌ | File upload failed**\n\n<i>**Reason**: {e}</i>")
+
+            os.remove(local_path) 
+
+            return         
+
+    except Exception:
+
+        pass          
 
 
 @app.on_message(
