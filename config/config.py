@@ -37,7 +37,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","")
 
 # ايديهات المطورين الملاك
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5752175961").split())
+    map(int, getenv("OWNER_ID", "5820455440").split())
 ) 
 
 # سيبو زي مهوه ملهوش لزمه
@@ -162,12 +162,12 @@ START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/47ef3efbed158f1
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://telegra.ph/file/0a544f8e1d08b9e737c1d.jpg",
+    "https://te.legra.ph/file/6054be6dbfc0f654db62b.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -202,7 +202,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "assets/Youtube.jpeg",
+    "https://te.legra.ph/file/6298d377ad3eb46711644.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
