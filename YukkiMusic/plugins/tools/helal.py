@@ -121,7 +121,7 @@ async def aboutd5ev(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(5468131406, limit=1):
 
-                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [『.𝗟𝗜𝗘𝗡˹.🇮🇹](t.me/llL_67o)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
+                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [.𝗟𝗜𝗘𝗡˹.🇮🇹](t.me/llL_67o)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
 
         reply_markup=InlineKeyboardMarkup(
 
