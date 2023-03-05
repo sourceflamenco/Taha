@@ -71,19 +71,15 @@ async def khalid(client: Client, message: Message):
         ),
     )
 @app.on_message(
-    filters.command(["مطور"],""))
-async def aboutd5ev(client: Client, message: Message):
-    usr = await client.get_chat(2089102006)
-    name = usr.first_name
-    bio = (await client.get_chat(2089102006)).bio
-    async for photo in client.iter_profile_photos(2089102006, limit=1):
-                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑻𝒐 𝑩𝒐𝒕 𝑴𝒊𝒓𝒂 ♪ -› @PsPsP\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 -› {bio}""", 
+    filters.command(["بوت"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""اي يقلبـي 🤍😻""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                        name, user_id=2089102006)
-                ],
+            [
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                ]
             ]
         ),
     ) 
@@ -112,7 +108,38 @@ def reply_to_timo(Client, message):
                 ]
             ]
         ),
-    )           
+    )    
+@app.on_message(
+    filters.command(["مطور","المطور"],""))
+async def aboutd5ev(client: Client, message: Message):
+
+    usr = await client.get_chat(5820455440)
+
+    name = usr.first_name
+
+    bio = (await client.get_chat(5820455440)).bio
+
+    async for photo in client.iter_profile_photos(5820455440, limit=1):
+
+                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [ᴋɪʙʀɪᴀ](t.me/FH_KN)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
+
+        reply_markup=InlineKeyboardMarkup(
+
+            [
+
+                [
+
+                    InlineKeyboardButton(
+
+                        name, user_id=5820455440)
+
+                ],
+
+            ]
+
+        ),
+
+    )       
 @app.on_message(
     filters.command(["لندا"],""))
 def reply_to_timo(Client, message):
