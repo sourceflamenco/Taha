@@ -17,7 +17,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/10dfb95793ff3d40e0a90.jpg",
-        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴍᴀʀɪᴇʏ²](t.me/Oi_90_7) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᴋɪʙʀɪᴀ¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝚁𝙰𝚂𝙺𝙾²](t.me/AA969622) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/A1122ll)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
@@ -69,77 +69,20 @@ async def khalid(client: Client, message: Message):
                 ]
             ]
         ),
-    )
-@app.on_message(
-    filters.command(["ماري"],""))
-async def aboutd5ev(client: Client, message: Message):
-
-    usr = await client.get_chat(5566744652)
-
-    name = usr.first_name
-
-    bio = (await client.get_chat(5566744652)).bio
-
-    async for photo in client.iter_profile_photos(5566744652, limit=1):
-
-                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [𝒎𝒂𝒓𝒍𝒆𝒚](t.me/Oi_90_7)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
-
-        reply_markup=InlineKeyboardMarkup(
-
-            [
-
-                [
-
-                    InlineKeyboardButton(
-
-                        name, user_id=5566744652)
-
-                ],
-
-            ]
-
-        ),
-
     ) 
-@app.on_message(
-    filters.command(["مين انا"],""))
-def reply_to_timo(Client, message):
-    message.reply_text(
-        f"""انت قلبي ❤😻""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-            [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
-                ]
-            ]
-        ),
-    )       
-@app.on_message(
-    filters.command(["انا مين"],""))
-def reply_to_timo(Client, message):
-    message.reply_text(
-        f"""ـ• ﺂٰنـُـٰٰت ﺂٰلـُُـٰ؏ـٖمـࢪَٰٰي َ،🤭♥️ ֆ ۦٰ،""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-            [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
-                ]
-            ]
-        ),
-    )    
 @app.on_message(
     filters.command(["مطور","المطور"],""))
 async def aboutd5ev(client: Client, message: Message):
 
-    usr = await client.get_chat(5566744652)
+    usr = await client.get_chat(5468131406)
 
     name = usr.first_name
 
-    bio = (await client.get_chat(5566744652)).bio
+    bio = (await client.get_chat(5468131406)).bio
 
-    async for photo in client.iter_profile_photos(5566744652, limit=1):
+    async for photo in client.iter_profile_photos(5468131406, limit=1):
 
-                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [𝒎𝒂𝒓𝒍𝒆𝒚](t.me/Oi_90_7)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
+                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [『.𝗟𝗜𝗘𝗡˹.](t.me/llL_67o)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
 
         reply_markup=InlineKeyboardMarkup(
 
@@ -149,7 +92,7 @@ async def aboutd5ev(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        name, user_id=5566744652)
+                        name, user_id=5468131406)
 
                 ],
 
@@ -171,45 +114,6 @@ def reply_to_timo(Client, message):
             ]
         ),
     )
-@app.on_message(
-    filters.command(["ميديا", "/tm", "tgm"],""))
-async def get_link_group(client, message):
-
-    try:
-
-        text = await message.reply("Processing...")
-
-        async def progress(current, total):
-
-            await text.edit_text(f"🕷 يتم رفع الوسائط ... {current * 100 / total:.1f}%")
-
-        try:
-
-            location = f"./media/group/"
-
-            local_path = await message.reply_to_message.download(location, progress=progress)
-
-            await text.edit_text("🕷 يتم جلب الرابط ... 🕸")
-
-            upload_path = upload_file(local_path) 
-
-            await text.edit_text(f"**🕸 | 𝘵𝘦𝘭𝘦 𝘭𝘪𝘯𝘬 **:\n\n<code>https://telegra.ph{upload_path[0]}</code>")     
-
-            os.remove(local_path) 
-
-        except Exception as e:
-
-            await text.edit_text(f"**❌ | File upload failed**\n\n<i>**Reason**: {e}</i>")
-
-            os.remove(local_path) 
-
-            return         
-
-    except Exception:
-
-        pass          
-
-
 @app.on_message(
     filters.command(["الرابط"],""))
 async def invitelink(client, message):
