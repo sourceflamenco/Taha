@@ -18,9 +18,7 @@ from YukkiMusic.utils.database import (add_served_chat,
                                        is_served_private_chat)
 
 @app.on_message(
-    command(["المطور","مطور"])
-    & ~filters.edited
-)
+    filters.command(["المطور","مطور"],""))
 async def zohary(client: Client, message: Message):
     usr = await client.get_users(5468131406)
     name = usr.first_name
