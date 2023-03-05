@@ -71,15 +71,19 @@ async def khalid(client: Client, message: Message):
         ),
     )
 @app.on_message(
-    filters.command(["بوت"],""))
-def reply_to_timo(Client, message):
-    message.reply_text(
-        f"""اي يقلبـي 🤍😻""",
+    filters.command(["مطور"],""))
+async def aboutd5ev(client: Client, message: Message):
+    usr = await client.get_chat(2089102006)
+    name = usr.first_name
+    bio = (await client.get_chat(2089102006)).bio
+    async for photo in client.iter_profile_photos(2089102006, limit=1):
+                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑻𝒐 𝑩𝒐𝒕 𝑴𝒊𝒓𝒂 ♪ -› @PsPsP\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 -› {bio}""", 
         reply_markup=InlineKeyboardMarkup(
             [
-            [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
-                ]
+                [
+                    InlineKeyboardButton(
+                        name, user_id=2089102006)
+                ],
             ]
         ),
     ) 
