@@ -113,13 +113,13 @@ def reply_to_timo(Client, message):
     filters.command(["مطور","المطور"],""))
 async def aboutd5ev(client: Client, message: Message):
 
-    usr = await client.get_chat(5468131406)
+    usr = await client.get_chat(5803079054)
 
     name = usr.first_name
 
-    bio = (await client.get_chat(5468131406)).bio
+    bio = (await client.get_chat(5803079054)).bio
 
-    async for photo in client.iter_profile_photos(5468131406, limit=1):
+    async for photo in client.iter_profile_photos(5803079054, limit=1):
 
                     await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [ʟɪᴇɴ](t.me/llL_67o)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
 
@@ -131,7 +131,7 @@ async def aboutd5ev(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        name, user_id=5468131406)
+                        name, user_id=5803079054)
 
                 ],
 
