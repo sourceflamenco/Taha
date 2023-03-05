@@ -9,6 +9,7 @@
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
+
 import config
 from config import BANNED_USERS
 from strings import get_command
@@ -26,7 +27,12 @@ from YukkiMusic.utils.thumbnails import gen_thumb
 SKIP_COMMAND = get_command("SKIP_COMMAND")
 
 
-@app.on_message(command(SKIP_COMMAND)
+@app.on_message(
+    filters.command(SKIP_COMMAND)
+    & ~filters.edited
+    & ~BANNED_USERS
+)
+@app.on_message(filters.command(["التالي","تخطي","لنداتخطي"],"")
     & ~filters.edited
     & ~BANNED_USERS
 )
@@ -61,16 +67,11 @@ async def skip(cli, message: Message, _, chat_id):
                                     await auto_clean(popped)
                             if not check:
                                 try:
-                                    if message.chat.type == "channel":
-                                       await message.reply_text(
-                                           _["admin_35"]
-                                       )
-                                    else:
-                                         await message.reply_text(
-                                            _["admin_10"].format(
+                                    await message.reply_text(
+                                        _["admin_10"].format(
                                             message.from_user.first_name
-                                           )
-                                         )
+                                        )
+                                    )
                                     await Yukki.stop_stream(chat_id)
                                 except:
                                     return
@@ -94,31 +95,19 @@ async def skip(cli, message: Message, _, chat_id):
                 if config.AUTO_DOWNLOADS_CLEAR == str(True):
                     await auto_clean(popped)
             if not check:
-                if message.chat.type == "channel":
-                   await message.reply_text(
-                         _["admin_35"]
-                   )
-                else:
-                     await message.reply_text(
-                           _["admin_10"].format(
-                           message.from_user.first_name
-                           )
-                     )
+                await message.reply_text(
+                    _["admin_10"].format(message.from_user.first_name)
+                )
                 try:
                     return await Yukki.stop_stream(chat_id)
                 except:
                     return
         except:
             try:
-                  if message.chat.type == "channel":
-                   await message.reply_text(
-                      _["admin_35"]
-                      )
-                  else:
-                      await message.reply_text(
+                await message.reply_text(
                     _["admin_10"].format(message.from_user.first_name)
-                   )
-                  return await Yukki.stop_stream(chat_id)
+                )
+                return await Yukki.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
