@@ -14,8 +14,8 @@ from strings import get_command
 
 disable_cut = []
 
-@app.on_message(filters.regex("^المطور$") & filters.group & ~filters.edited)
-async def aboutd5ev(client: Client, message: Message):
+@app.on_message(filters.regex("^المطور$") & filters.group)
+async def descut(client, message):
     usr = await client.get_chat(5468131406)
     name = usr.first_name
     bio = (await client.get_chat(5468131406)).bio
