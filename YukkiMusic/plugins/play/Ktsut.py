@@ -30,28 +30,4 @@ async def descut(client, message):
             ]
         ),
     )
-@app.on_message(filters.regex("^ماري$") & filters.group & SUDOERS)
-async def khalid(client: Client, message: Message):
-    usr = await client.get_chat(message.from_user.id)
-    name = usr.first_name
-    bio = usr.bio
-    await message.reply_video(
-        video=f"https://graph.org/file/e578fe00ad718b7e42626.jpg",
-        caption=f"""• 𝒊𝒏 𝒕𝒉𝒆 𝒆𝒏𝒅, 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒕𝒉𝒆 𝒃𝒂𝒅, 𝒂𝒏𝒅 𝒕𝒉𝒆𝒚 𝒂𝒓𝒆 𝒕𝒉𝒆 𝒊𝒏𝒏𝒐𝒄𝒆𝒏𝒕\n\n• 𝑵𝒂𝒎𝒆 » {message.from_user.mention}\n• 𝑼𝒔𝒆𝒓 » @{message.from_user.username}\n• 𝑺𝒕𝒂𝒕𝒔 » ʟɪɴᴅᴀ ᴅᴇᴠᴇʟᴏᴘᴇʀ\n• 𝑩𝒊𝒐 » {bio}""",
-        reply_markup=InlineKeyboardMarkup(
-
-            [
-
-                [
-
-                    InlineKeyboardButton(
-
-                        name, user_id=5566744652)
-
-                ],
-
-            ]
-
-        ),
-
-    )    
+    
