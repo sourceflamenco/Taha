@@ -27,7 +27,7 @@ SKIP_COMMAND = get_command("SKIP_COMMAND")
 
 
 @app.on_message(
-    filters.command(SKIP_COMMAND)
+    command(SKIP_COMMAND)
     & ~filters.edited
     & ~BANNED_USERS
 )
