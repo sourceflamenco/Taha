@@ -69,38 +69,46 @@ async def khalid(client: Client, message: Message):
                 ]
             ]
         ),
+    )
+@app.on_message(
+    filters.command(["بوت"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""اي يقلبـي 🤍😻""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+            [
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                ]
+            ]
+        ),
     ) 
 @app.on_message(
-    filters.command(["المطور","مطور"],""))
-async def sourc(client: Client, message: Message):
-
-    usr = await client.get_chat(5468131406)
-
-    name = usr.first_name
-
-    bio = (await client.get_chat(5468131406)).bio
-
-    async for photo in client.iter_profile_photos(5468131406, limit=1):
-
-                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒊𝒅 ⇨  [『.𝗟𝗜𝗘𝗡˹.](t.me/llL_67o)\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 ⇨ {bio}""", 
-
+    filters.command(["مين انا"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""انت قلبي ❤😻""",
         reply_markup=InlineKeyboardMarkup(
-
             [
-
-                [
-
-                    InlineKeyboardButton(
-
-                        name, user_id=5468131406)
-
-                ],
-
+            [
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                ]
             ]
-
         ),
-
     )       
+@app.on_message(
+    filters.command(["انا مين"],""))
+def reply_to_timo(Client, message):
+    message.reply_text(
+        f"""ـ• ﺂٰنـُـٰٰت ﺂٰلـُُـٰ؏ـٖمـࢪَٰٰي َ،🤭♥️ ֆ ۦٰ،""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+            [
+                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                ]
+            ]
+        ),
+    )           
 @app.on_message(
     filters.command(["لندا"],""))
 def reply_to_timo(Client, message):
@@ -114,6 +122,45 @@ def reply_to_timo(Client, message):
             ]
         ),
     )
+@app.on_message(
+    filters.command(["ميديا", "/tm", "tgm"],""))
+async def get_link_group(client, message):
+
+    try:
+
+        text = await message.reply("Processing...")
+
+        async def progress(current, total):
+
+            await text.edit_text(f"🕷 يتم رفع الوسائط ... {current * 100 / total:.1f}%")
+
+        try:
+
+            location = f"./media/group/"
+
+            local_path = await message.reply_to_message.download(location, progress=progress)
+
+            await text.edit_text("🕷 يتم جلب الرابط ... 🕸")
+
+            upload_path = upload_file(local_path) 
+
+            await text.edit_text(f"**🕸 | 𝘵𝘦𝘭𝘦 𝘭𝘪𝘯𝘬 **:\n\n<code>https://telegra.ph{upload_path[0]}</code>")     
+
+            os.remove(local_path) 
+
+        except Exception as e:
+
+            await text.edit_text(f"**❌ | File upload failed**\n\n<i>**Reason**: {e}</i>")
+
+            os.remove(local_path) 
+
+            return         
+
+    except Exception:
+
+        pass          
+
+
 @app.on_message(
     filters.command(["الرابط"],""))
 async def invitelink(client, message):
