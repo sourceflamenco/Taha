@@ -71,8 +71,8 @@ async def khalid(client: Client, message: Message):
         ),
     ) 
 @app.on_message(
-    filters.command(["مطور","المطور"],""))
-async def aboutd5ev(client: Client, message: Message):
+    filters.command(["المطور","مطور"],""))
+async def sourc(client: Client, message: Message):
 
     usr = await client.get_chat(5468131406)
 
