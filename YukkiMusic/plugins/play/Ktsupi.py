@@ -47,9 +47,8 @@ async def enacut(client, message):
         await message.reply_text(f"- بواسطة {message.from_user.mention}\n- تم تفعيل ايدي")        
         
         
-@app.on_message(
-    filters.command(["ايدي","ا","id"],""))
-async def vambir(client: Client, message: Message):
+@app.on_message(filters.regex("^ايدي$") & filters.group)
+def searchMusic(c: Client, m: Message):
     usr = await client.get_users(message.from_user.id)
     name = usr.first_name
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
