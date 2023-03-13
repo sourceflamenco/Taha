@@ -16,7 +16,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     filters.command([".","ماري"],""))
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/588d70e34b51710ae8dce.jpg",
+        photo=f"https://telegra.ph/file/73b3ca72688de7dfaa42e.jpg",
         caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 🎶\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᯓ• 𝒎𝒂𝒓𝒍𝒆𝒚 ،⚚˹𝐕𝒑𝒏⸥](t.me/Oi_90_7)\n• ᴄʜᴀɴɴᴇʟ » [『.𝗟𝗜𝗘𝗡˹.🇮🇹](t.me/FH_KN)**""",
         reply_markup=InlineKeyboardMarkup(
             [
