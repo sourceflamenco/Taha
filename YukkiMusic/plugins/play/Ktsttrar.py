@@ -21,17 +21,17 @@ async def descut(client, message):
     user = await client.get_chat(5820455440)
     Bio = user.bio
     async for photo in client.iter_profile_photos(5820455440, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""ᦔꫀꪜ | - [{usr.first_name}](https://t.me/Batlstuta) 🕷
+                    await message.reply_photo(photo.file_id,       caption=f"""ᦔꫀꪜ | - [{usr.first_name}](https://t.me/FH_Hv) 🕷
                        
-ꪊ𝘴ꫀ𝘳 ᦔꫀꪜ | - @Batlstuta 🕷
+ꪊ𝘴ꫀ𝘳 ᦔꫀꪜ | - @FH_Hv 🕷
                        
 ႦᎥ᥆ | - {Bio} 🕷       
                          
-Ꭵժ | - 5818384418 🕷 """, 
+Ꭵժ | - 5820455440 🕷 """, 
 reply_markup=InlineKeyboardMarkup(
           [              
             [          
-              InlineKeyboardButton (name, url=f"https://t.me/Batlstuta")
+              InlineKeyboardButton (name, url=f"https://t.me/FH_Hv")
             ],             
           ]                 
        )                     
