@@ -23,15 +23,13 @@ async def zohary(client: Client, message: Message):
     async for photo in client.iter_profile_photos(5820455440, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""- معلومات المطور الاساسي
                     
-ɴᴀᴍᴇ » [{usr.first_name}](https://t.me/FH_HK)
+ɴᴀᴍᴇ » [{usr.first_name}](https://t.me/FH_KN) 
                         
-ᴜsᴇʀ » @FH_HK 
-                           
-bio » {Bio}""", 
+ᴜsᴇʀ » @FH_KN""", 
 reply_markup=InlineKeyboardMarkup(
           [                   
             [                   
-              InlineKeyboardButton (name, url=f"https://t.me/FH_HK")
+              InlineKeyboardButton (name, url=f"https://t.me/FH_KN")
             ],               
           ]              
        )              
