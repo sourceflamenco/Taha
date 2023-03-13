@@ -7,7 +7,6 @@ from time import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from YukkiMusic import app
-from YukkiMusic import settingsApp
 from YukkiMusic.utils.decorators.admins import AdminActual
 from strings import get_command
 
