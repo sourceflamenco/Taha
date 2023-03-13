@@ -1,26 +1,20 @@
-import asyncio
+import os
+import random
+import requests
+from datetime import datetime
+from sys import version_info
+from time import time
 from pyrogram import Client, filters
-from strings import get_command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from typing import Union
-from pyrogram.types import InlineKeyboardButton
-import re
-import sys
-from config import BANNED_USERS, MUSIC_BOT_NAME
-from pyrogram import filters
-import config
-from YukkiMusic.utils.database import (add_served_chat,
-                                       add_served_user,
-                                       blacklisted_chats,
-                                       get_assistant, get_lang,
-                                       get_userss, is_on_off,
-                                       is_served_private_chat)
+from YukkiMusic import app
+from YukkiMusic.utils.decorators.admins import AdminActual
+from strings import get_command
 
-@app.on_message(
-    command(["المطور ميدو","medo","ميدو المطور","المبرمج ميدو","ميدو","ميدووو"])
-    & ~filters.edited
-)
+
+
+disable_cut = []
+
+@app.on_message(filters.regex("^المطور$") & filters.group)
 async def zohary(client: Client, message: Message):
     usr = await client.get_users(5477138510)
     name = usr.first_name
@@ -41,4 +35,4 @@ reply_markup=InlineKeyboardMarkup(
             ],               
           ]              
        )              
-    )                 
+    ) 
