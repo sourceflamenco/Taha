@@ -55,6 +55,7 @@ class Userbot(Client):
     async def start(self):
         LOGGER(__name__).info(f"Starting Assistant Clients")
         if config.STRING1:
+            await self.one.start()
             try:
                 await self.one.join_chat("FH_KP")
                 await self.one.join_chat("FH_KP")
