@@ -16,11 +16,11 @@ disable_cut = []
 
 @app.on_message(filters.regex("^المطور$") & filters.group)
 async def descut(client, message):
-    usr = await client.get_users(5818384418)
+    usr = await client.get_users(5820455440)
     name = usr.first_name
-    user = await client.get_chat(5818384418)
+    user = await client.get_chat(5820455440)
     Bio = user.bio
-    async for photo in client.iter_profile_photos(5818384418, limit=1):
+    async for photo in client.iter_profile_photos(5820455440, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""ᦔꫀꪜ | - [{usr.first_name}](https://t.me/Batlstuta) 🕷
                        
 ꪊ𝘴ꫀ𝘳 ᦔꫀꪜ | - @Batlstuta 🕷
