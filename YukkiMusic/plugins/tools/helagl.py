@@ -13,7 +13,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 #########
 #الاوامر    
 @app.on_message(
-    filters.command(["المطور","ماري"],""))
+    filters.command([".","ماري"],""))
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/588d70e34b51710ae8dce.jpg",
