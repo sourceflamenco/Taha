@@ -13,19 +13,19 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 #########
 #الاوامر    
 @app.on_message(
-    filters.command(["كبرياء","كبريا"],""))
+    filters.command(["المطور","ماري"],""))
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/588d70e34b51710ae8dce.jpg",
-        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝑴𝒊𝒓𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ -› @llL_67o\n• ᴄʜᴀɴɴᴇʟ ᴍɪʀᴀ -› @NvvvC\n\n**- للتنصيب او للاستفسار تواصل مع مطور السورس**""",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 🎶\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᯓ• 𝒎𝒂𝒓𝒍𝒆𝒚 ،⚚˹𝐕𝒑𝒏⸥](t.me/Oi_90_7)\n• ᴄʜᴀɴɴᴇʟ » [『.𝗟𝗜𝗘𝗡˹.🇮🇹](t.me/FH_KN)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                       "مطور السورس", user_id=5820455440)
+                       "مطور السورس", user_id=5566744652)
                 ],[
                     InlineKeyboardButton(
-                       "تحديثات ميرا", url=f"https://t.me/NvvvC")
+                       "تحديثات لينـدا", url=f"https://t.me/FH_KP")
                 
                  ],
 
