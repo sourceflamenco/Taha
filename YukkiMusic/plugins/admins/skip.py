@@ -39,7 +39,6 @@ SKIP_COMMAND = get_command("SKIP_COMMAND")
 )
 @AdminRightsCheck
 async def skip(cli, message: Message, _, chat_id):
-async def skip(cli, message: Message, _, chat_id):
     if not len(message.command) < 2:
         loop = await get_loop(chat_id)
         if loop != 0:
