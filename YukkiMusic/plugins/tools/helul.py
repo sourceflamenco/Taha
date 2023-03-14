@@ -21,10 +21,10 @@ async def khalid(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                InlineKeyboardButton("『.𝗟𝗜𝗘𝗡˹.🇮🇹", url=f"https://t.me/llL_67o"),
+                InlineKeyboardButton("𝖫𝗂𝗇𝖪 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .", url=f"https://t.me/xFlameNco"),
                 ],[
                 InlineKeyboardButton(
-                        "« تحـديثات لينـدا »", url=f"https://t.me/FH_KP"),
+                        "« تحـديثات فلامنكو »", url=f"https://t.me/o_xox"),
                 ]
             ]
         ),

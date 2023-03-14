@@ -17,17 +17,17 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/b56b90ec8ae744c01048e.jpg",
-        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [『.𝗟𝗜𝗘𝗡˹.🇮🇹¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [『.𝗟𝗜𝗘𝗡˹.🇮🇹](t.me/llL_67o) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/FH_KP)\n\n**""",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝖫𝗂𝗇𝖪 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .¹](t.me/FH_KN) \n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [𝖫𝗂𝗇𝖪 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .](t.me/llL_67o) \n• ᴄʜᴀɴɴᴇʟ 𝙻𝙸𝙽𝙳𝙰 » [ᴄʜᴀɴɴᴇʟ](t.me/FH_KP)\n\n**""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("تحديثات لندا", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات فلامنكو", url=f"https://t.me/o_xox")
                 ]
             ]
         ),
     )     
 @app.on_message(
-    filters.command(["اوامرلندا","الاوامر"],""))
+    filters.command(["اوامرفلامنكو","الاوامر"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/15ab2ecef4cc16d95be30.jpg",
@@ -48,7 +48,7 @@ async def khalid(client: Client, message: Message):
       reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات فلامنكو ♪", url=f"https://t.me/o_xox")
                 ]
             ]
         ),
@@ -65,7 +65,7 @@ async def khalid(client: Client, message: Message):
                 InlineKeyboardButton("بـوت الحـذف", url=f"https://t.me/DTeLebot"),
                 ],[
                 InlineKeyboardButton(
-                        "تحديثات لنـدا", url=f"https://t.me/FH_KP"),
+                        "تحديثات فلامنكو", url=f"https://t.me/o_xox"),
                 ]
             ]
         ),
@@ -78,7 +78,7 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات فلامنكو ♪", url=f"https://t.me/o_xox")
                 ]
             ]
         ),
@@ -91,7 +91,7 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات فلامنكو ♪", url=f"https://t.me/o_xox")
                 ]
             ]
         ),
@@ -104,20 +104,20 @@ def reply_to_timo(Client, message):
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات فلامنكو ♪", url=f"https://t.me/o_xox")
                 ]
             ]
         ),
     )           
 @app.on_message(
-    filters.command(["لندا"],""))
+    filters.command(["فلامنكو"],""))
 def reply_to_timo(Client, message):
     message.reply_text(
         f"""اي يقلبي 🤍😻""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("تحديثات لندا ♪", url=f"https://t.me/FH_KP")
+                InlineKeyboardButton("تحديثات فلامنكو ♪", url=f"https://t.me/o_xox")
                 ]
             ]
         ),

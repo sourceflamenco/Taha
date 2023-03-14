@@ -17,7 +17,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/73b3ca72688de7dfaa42e.jpg",
-        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 🎶\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᯓ• 𝒎𝒂𝒓𝒍𝒆𝒚 ،⚚˹𝐕𝒑𝒏⸥](t.me/Oi_90_7)\n• ᴄʜᴀɴɴᴇʟ » [『.𝗟𝗜𝗘𝗡˹.🇮🇹](t.me/FH_KN)**""",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝒍𝒊𝒏𝒅𝒂 🎶\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ » [ᯓ• 𝒎𝒂𝒓𝒍𝒆𝒚 ،⚚˹𝐕𝒑𝒏⸥](t.me/Oi_90_7)\n• ᴄʜᴀɴɴᴇʟ » [𝖫𝗂𝗇𝖪 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .](t.me/FH_KN)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -25,7 +25,7 @@ async def sourc(client: Client, message: Message):
                        "مطور السورس", url=f"https://t.me/Oi_90_7")
                 ],[
                     InlineKeyboardButton(
-                       "تحديثات لينـدا", url=f"https://t.me/FH_KP")
+                       "تحديثات فلامنكو", url=f"https://t.me/o_xox")
                 
                  ],
 
