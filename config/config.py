@@ -37,7 +37,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","")
 
 # ايديهات المطورين الملاك
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5820455440").split())
+    map(int, getenv("OWNER_ID", "5707831441").split())
 ) 
 
 # سيبو زي مهوه ملهوش لزمه
@@ -59,16 +59,16 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # قناه الاشتراك الاجباري بدون @
 CHANNEL = getenv(
-    "CHANNEL", "FH_KP"
+    "CHANNEL", "o_xox"
 )  # قناه الاشتراك الاجباري مثل هيك https://t.me/M_O_D_Y_CH
 CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "https://t.me/FH_KP"
+    "CHANNEL_SUDO", "https://t.me/o_xox"
 )  # قناة السورس هيك https://t.me/M_O_D_Y_CH
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/FH_KP"
+    "SUPPORT_CHANNEL", "https://t.me/o_xox"
 )  #جروب السورس https://t.me/BarGohara
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/FH_KP"
+    "SUPPORT_GROUP", "https://t.me/o_xox"
 ) 
 
 # ما تلعب بيها حبي هي عند الاغنيه متخلص ينزل المساعد من الكول
@@ -158,16 +158,16 @@ autoclean = []
 
 
 # صوره الاستارت
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/fc60eef2c9bb177eb2f1d.mp4")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph//file/f62c759b490c63b50027e.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg",
+    "https://telegra.ph//file/882516849cd131ff704f8.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://te.legra.ph/file/6054be6dbfc0f654db62b.jpg",
+    "https://telegra.ph//file/8ecaaceb12955c40da8fc.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -177,7 +177,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://telegra.ph/file/e9c9d405688154b60bb15.jpg",
+    "https://telegra.ph//file/7ccf055684d8549f8b299.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
@@ -202,7 +202,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://te.legra.ph/file/6298d377ad3eb46711644.jpg",
+    "https://telegra.ph//file/a054bc6d56a5bebcb092d.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
