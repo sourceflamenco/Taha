@@ -55,7 +55,7 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # توكون الجيث هاب لو حابب تضيفو
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # قناه الاشتراك الاجباري بدون @
 CHANNEL = getenv(
