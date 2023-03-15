@@ -13,18 +13,18 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 #########
 #الاوامر    
 @app.on_message(
-    filters.command(["المطور","مطور"],""))
+    filters.command(["المطور","السورس"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/b56b90ec8ae744c01048e.jpg",
-        caption=f"""- معلومات المطور الاساسي""",
+        photo=f"https://telegra.ph//file/2d9c0a1babe6311a503c0.jpg",
+        caption=f"""𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 & 𝗌𝗈𝗎𝗋𝖼𝖾 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                InlineKeyboardButton("𝖫𝗂𝗇𝖪 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .", url=f"https://t.me/xFlameNco"),
+                InlineKeyboardButton("𓏺 𝖳𝖺𝗁𝖺 𝖺𝗅 𝖪𝗂𝗅𝖺𝗇𝗂 .", url=f"https://t.me/GBBBBB"),
                 ],[
                 InlineKeyboardButton(
-                        "« تحـديثات فلامنكو »", url=f"https://t.me/o_xox"),
+                        "𓏺 𝖲𝗈𝗎𝗋𝖼𝖾 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 𓏺", url=f"https://t.me/o_xox"),
                 ]
             ]
         ),
