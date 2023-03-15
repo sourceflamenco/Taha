@@ -1,11 +1,4 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
+
 
 import re
 import sys
@@ -16,87 +9,79 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "ايبي ايدي"))
-API_HASH = getenv("API_HASH", "ايبي هاش")
+# الايبيهات الهاش والايدي بنجبهم من هنا my.telegram.org
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH","")
 
-## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "توكن البوت")
+## توكن البوت بنجيبو من هنا @Botfather in Telegram.
+BOT_TOKEN = getenv("BOT_TOKEN","")
 
-# Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://alhajji:alhajji313@mido.y0er3.mongodb.net/albasha?retryWrites=true&w=majority")
+# المونج لو ممعكش سيبو زي مهوه
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-# Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
+# مده الاغنيه بتبقي ٦٠ دقيقه انا مسويها ٣٠٠ تقدر تزودها
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "150")
+    getenv("DURATION_LIMIT", "500")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
-)  # Remember to give value in Minutes
+) 
 
-# You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001577545102"))
+# جروب اللي مرفوع فيه البوت والمساعد ادمن 
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
-# A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "music")
+# اسم البوت مينفعش تكتبو مزغرف
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","")
 
-# Your User ID.
+# ايديهات المطورين الملاك
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5197215524").split())
-)  # Input type must be interger
+    map(int, getenv("OWNER_ID", "5707831441").split())
+) 
 
-# Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+# سيبو زي مهوه ملهوش لزمه
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 
-# You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+# ملهوش لزمه بردو
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-# For customized or modified Repository
+# مش فاهم فيها سبها زي مهيه
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/uui8i/vo",
+    "https://github.com/TeamYukki/YukkiMusicBot",
 )
-BOT_USERNAME = getenv(
-    "BOT_USERNAME", "T4I4Bot"
-)  # معرف بوتك بدون @
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+#متغيرهاش نهائي
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
-# GIT TOKEN ( if your edited repo is private)
+# توكون الجيث هاب لو حابب تضيفو
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-# Only  Links formats are  accepted for this Var value.
+# قناه الاشتراك الاجباري بدون @
+CHANNEL = getenv(
+    "CHANNEL", "o_xox"
+)  # قناه الاشتراك الاجباري مثل هيك https://t.me/M_O_D_Y_CH
 CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "WIF_l"
-)  # معرف قناتك بدون @
-SUDO_USER = getenv(
-    "SUDO_USER", "https://t.me/DZzD5"
-)  # رابط حسابك
-YAFA_NAME = getenv(
-    "YAFA_NAME", "• 𝖡𝗈𝖬𝖻 •"
-)  # اسم قناتك
-YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/WIF_l"
-)  # رابط قناتك
+    "CHANNEL_SUDO", "https://t.me/o_xox"
+)  # قناة السورس هيك https://t.me/M_O_D_Y_CH
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/KTTCC"
-)  # رابط قناتك
+    "SUPPORT_CHANNEL", "https://t.me/o_xox"
+)  #جروب السورس https://t.me/BarGohara
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/tt77t7tt7"
-)  # رابط كروبك
+    "SUPPORT_GROUP", "https://t.me/o_xox"
+) 
 
-# Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "true")
+# ما تلعب بيها حبي هي عند الاغنيه متخلص ينزل المساعد من الكول
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", "50")
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
-    getenv("AUTO_SUGGESTION_TIME", "5400")
+    getenv("AUTO_SUGGESTION_TIME", "50")
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
@@ -114,15 +99,15 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 # Time sleep duration For Telegram Downloader
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
-# Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/DZzD5")
+# هيدي في رساله استارت لصنع بوت 
+GITHUB_REPO = getenv("GITHUB_REPO", None)
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "10"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
@@ -132,7 +117,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "4")
+    getenv("CLEANMODE_MINS", "8888888888888888888888888")
 )  # Remember to give value in Seconds
 
 
@@ -149,20 +134,13 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
 
 
-# You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "AgCpkoCevP3P8hSetdtUUdBdgRijuGP4Phw0hhQkkjt31fB949RN8qvlBSd7iG7cbST7egOQceaDJyYah4JrcN8f5eSj53N7PZeCU_746iKLdL236nRji155kHs-wypGJAm8jwW9OxpKkzrMN1IQXlIWnu_B9EkLfztyHRx03Khe9G9BDfNxqVxptrpjNWSCpQ5RSW31t5YQftaQYZkHkxQzmM0R753QJQbMR81q-TsMnchcSH_A5iZrzyn1haF0lKn9d6HJIZz2s1spL2G7i2VDPVPakzPSwJb9t8AjnoyJ0DjjSaGASv3wpVeBaAdOYyWTqg2pJk2QrWV77FPQtlILAAAAAUjjBCwA")
+# جلسه البايروجران تقدر تجبها من هنا@helal_trmix_BOT
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-
-#  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
-#  \ \   / / |  | | |/ / |/ /_   _| |  \/  | |  | |/ ____|_   _/ ____| |  _ \ / __ \__   __|
-#   \ \_/ /| |  | | ' /| ' /  | |   | \  / | |  | | (___   | || |      | |_) | |  | | | |
-#    \   / | |  | |  < |  <   | |   | |\/| | |  | |\___ \  | || |      |  _ <| |  | | | |
-#     | |  | |__| | . \| . \ _| |_  | |  | | |__| |____) |_| || |____  | |_) | |__| | | |
-#     |_|   \____/|_|\_\_|\_\_____| |_|  |_|\____/|_____/|_____\_____| |____/ \____/  |_|
 
 
 ### DONT TOUCH or EDIT codes after this line
@@ -179,17 +157,17 @@ clean = {}
 autoclean = []
 
 
-# Images
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/811f81a75d21b06b90207.jpg")
+# صوره الاستارت
+START_IMG_URL = getenv("START_IMG_URL", "")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://telegra.ph//file/882516849cd131ff704f8.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "https://telegra.ph//file/8ecaaceb12955c40da8fc.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -199,7 +177,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+    "https://telegra.ph//file/7ccf055684d8549f8b299.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
@@ -224,7 +202,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "assets/Youtube.jpeg",
+    "https://telegra.ph//file/a054bc6d56a5bebcb092d.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
