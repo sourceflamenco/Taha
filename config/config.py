@@ -49,13 +49,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 # مش فاهم فيها سبها زي مهيه
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Gbbbbbbt/tahaazl",
+    "https://github.com/TeamYukki/YukkiMusicBot",
 )
 #متغيرهاش نهائي
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # توكون الجيث هاب لو حابب تضيفو
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # قناه الاشتراك الاجباري بدون @
 CHANNEL = getenv(
@@ -64,7 +64,12 @@ CHANNEL = getenv(
 CHANNEL_SUDO = getenv(
     "CHANNEL_SUDO", "https://t.me/o_xox"
 )  # قناة السورس هيك https://t.me/M_O_D_Y_CH
-
+SUPPORT_CHANNEL = getenv(
+    "SUPPORT_CHANNEL", "https://t.me/o_xox"
+)  #جروب السورس https://t.me/BarGohara
+SUPPORT_GROUP = getenv(
+    "SUPPORT_GROUP", "https://t.me/o_xox"
+) 
 
 # ما تلعب بيها حبي هي عند الاغنيه متخلص ينزل المساعد من الكول
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
@@ -225,35 +230,22 @@ def time_to_seconds(time):
 
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
-
 SONG_DOWNLOAD_DURATION_LIMIT = int(
-
     time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00")
-
 )
 
 if SUPPORT_CHANNEL:
-
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
-
         print(
-
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
-
         )
-
         sys.exit()
 
 if SUPPORT_GROUP:
-
     if not re.match("(?:http|https)://", SUPPORT_GROUP):
-
         print(
-
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
-
         )
-
         sys.exit()
 
 if UPSTREAM_REPO:
