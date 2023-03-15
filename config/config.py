@@ -64,12 +64,7 @@ CHANNEL = getenv(
 CHANNEL_SUDO = getenv(
     "CHANNEL_SUDO", "https://t.me/o_xox"
 )  # قناة السورس هيك https://t.me/M_O_D_Y_CH
-SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/o_xox"
-)  #جروب السورس https://t.me/BarGohara
-SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/o_xox"
-) 
+
 
 # ما تلعب بيها حبي هي عند الاغنيه متخلص ينزل المساعد من الكول
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
