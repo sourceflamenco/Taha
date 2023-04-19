@@ -16,7 +16,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     filters.command(["المطور","السورس"],""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        video=f"https://graph.org/file/6076483be0fd9cd592ce8.mp4",
+        photo=f"https://telegra.ph//file/2d9c0a1babe6311a503c0.jpg",
         caption=f"""𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 & 𝗌𝗈𝗎𝗋𝖼𝖾 𝖥𝗅𝖺𝗆𝖾𝖭𝖼𝗈 .""",
         reply_markup=InlineKeyboardMarkup(
             [
