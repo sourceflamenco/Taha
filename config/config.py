@@ -10,11 +10,11 @@ from pyrogram import filters
 load_dotenv()
 
 # الايبيهات الهاش والايدي بنجبهم من هنا my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH","")
+API_ID = int(getenv("API_ID", "21412670"))
+API_HASH = getenv("API_HASH","c77f43ffa77efe705dbbd86ac6f1808e")
 
 ## توكن البوت بنجيبو من هنا @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","")
+BOT_TOKEN = getenv("BOT_TOKEN","5363282761:AAHb2Vj5SuYM7gNdxYcuW4jCL0B8wttusV8")
 
 # المونج لو ممعكش سيبو زي مهوه
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -30,10 +30,10 @@ SONG_DOWNLOAD_DURATION = int(
 ) 
 
 # جروب اللي مرفوع فيه البوت والمساعد ادمن 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001950384288"))
 
 # اسم البوت مينفعش تكتبو مزغرف
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","source FlameNco")
 
 # ايديهات المطورين الملاك
 OWNER_ID = list(
@@ -135,7 +135,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # جلسه البايروجران تقدر تجبها من هنا@helal_trmix_BOT
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "AQATkvxsRUPI6mjHiTxfI0ih_vQX7fRhyYGS2CGTcn2baZpeKYcf2aOWumDTT_XrAFba1G9p9cIX1HoYTV7mteGFYC4TmupTF71TVkYHH6jvCyNozF7bKb3eJr13gp0upEHngUJRTHOghx8b6Qh2dTAURUJifhQvlBlt5qWvrbUr0q7J4907LHAtgeEXS5aPN5ncIxQIVXp07-G2V4XR3S0KnZ1GjPOY5qnyIHYVFsVPO-eBLLqqGFwmxhY_y8yMdQglkro3WFCrEzAZIGYC-FswbVf0Clpz7vh4_Ru0JoHzLFOuFlCE4EP9xRUSVBy8HB2jLi2-j9wSZ3YOcgYU0Xc1AAAAAUr2mUgA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
