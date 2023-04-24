@@ -14,7 +14,7 @@ API_ID = int(getenv("API_ID", "21412670"))
 API_HASH = getenv("API_HASH","c77f43ffa77efe705dbbd86ac6f1808e")
 
 ## توكن البوت بنجيبو من هنا @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","5363282761:AAHb2Vj5SuYM7gNdxYcuW4jCL0B8wttusV8")
+BOT_TOKEN = getenv("BOT_TOKEN","5363282761:AAFmwLZt85JKzdMXhqgyfhQIX_ZmaU_WvXI")
 
 # المونج لو ممعكش سيبو زي مهوه
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
